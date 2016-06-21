@@ -1,0 +1,35 @@
+<div class="page-header">
+  <h1><%= @current_title %> <small>.com</small></h1>
+</div>
+
+
+
+<div class="jumbotron">
+
+  <div class="container center">
+    <%= image_tag @banner_display, :class=>"img-responsive" %>
+    <br/>
+
+
+    <div class="row">
+      <div class="col-xs-6 col-sm-4">
+        <div class="page-header">
+          <big><%= @header_display_left %></big>
+        </div>
+        <%= @text_display_left %>
+      </div>
+      <div class="col-xs-6 col-sm-4">
+        <div class="page-header">
+          <big><%= @header_display_center %></big>
+        </div>
+        <%= @text_display_center %></div>
+      <div class="clearfix visible-xs-block"></div>
+      <div class="col-xs-6 col-sm-4">
+        <div class="page-header">
+          <big><%= @header_display_right %></big>
+        </div>
+        <%= @text_display_right %></div>
+    </div>
+
+  </div>
+</div>

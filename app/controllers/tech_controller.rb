@@ -7,6 +7,14 @@ class TechController < ApplicationController
 
     @titles = ["Airbnb", "Tesla", "Uber"]
     @current_title = @titles[@idparams - 1]
+    #
+    # if @idparams == 'airbnb'
+    #   @current_title = @titles[0]
+    # elsif @idparams == 'tesla'
+    #   @current_title = @titles[1]
+    # elsif @idparams == 'uber'
+    #   @current_title == @titles[2]
+    # end
 
 
     airbnb_header = Header.new("Origins", "Founders", "Funding")

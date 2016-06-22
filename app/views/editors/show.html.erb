@@ -1,0 +1,42 @@
+
+<div class="page-header">
+  <h1><%= @editor.company_name %> <small>.com</small></h1>
+</div>
+
+
+
+<div class="jumbotron">
+
+  <div class="container center">
+    <%= image_tag @editor.image, :class=>"img-responsive" %>
+    <br/>
+
+
+    <div class="row">
+      <div class="col-xs-6 col-sm-4">
+        <div class="page-header">
+          <big>Origins</big>
+        </div>
+        <%= @editor.pleft %>
+      </div>
+      <div class="col-xs-6 col-sm-4">
+        <div class="page-header">
+          <big>Founders</big>
+        </div>
+        <%= @editor.pcenter %></div>
+      <div class="clearfix visible-xs-block"></div>
+      <div class="col-xs-6 col-sm-4">
+        <div class="page-header">
+          <big>Funding</big>
+        </div>
+        <%= @editor.pright %></div>
+    </div>
+
+  </div>
+</div>
+
+
+<%= @editor.name %> |
+<%= @editor.email %><br /><br /> 
+
+<%= link_to 'Destroy', @editor, method: :delete, data: { confirm: 'Are you sure?'} %>
